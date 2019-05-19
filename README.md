@@ -43,6 +43,8 @@ These problems are a great place to build the foundation of your algorithm and d
 - [Roads and Libraries (HackerRank)](https://www.hackerrank.com/challenges/torque-and-development/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/roads_and_libs/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/roads_and_libs/sol.py)
+- [Fibonacci Modified (HackerRank)](https://www.hackerrank.com/challenges/fibonacci-modified/problem)
+    - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/fibonacci_modified/sol.py)
 ### Medium
 
 When you've got the fundamentals figured out try these problems.

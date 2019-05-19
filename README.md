@@ -1,6 +1,10 @@
 # mcp-starter-pack
 
+
 The MCP starter pack is a repository that contain the solution and link to a variety of programming problems that we enjoyed solving at MCP.
+
+<img src="images/mcp_logo.png" width="200" height="200" />
+
 
 ### Table of Contents
 

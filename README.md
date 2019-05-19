@@ -32,7 +32,7 @@ These problems are a great place to build the foundation of your algorithm and d
 
 When you've got the fundamentals figured out try these problems.
 
-- [Rust Murderer (HR)](https://www.hackerrank.com/challenges/rust-murderer/problem)
+- [Rust & Murderer (HR)](https://www.hackerrank.com/challenges/rust-murderer/problem)
 
 ### Hard
 

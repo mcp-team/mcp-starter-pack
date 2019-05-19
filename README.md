@@ -38,6 +38,7 @@ Most of these problems are trivial to solve but you can use them to get familiar
 These problems are a great place to build the foundation of your algorithm and data structure skills. Most of these problems will test your knowledge on fundamental algorithms.
 
 - [BFS Breadth First Search: Shortest Reach (HackerRank)](https://www.hackerrank.com/challenges/bfsshortreach/problem)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/breadth_first_search_shortest_reach/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/breadth_first_search_shortest_reach/sol.py)
 - [Roads and Libraries (HackerRank)](https://www.hackerrank.com/challenges/torque-and-development/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/roads_and_libs/sol.py)

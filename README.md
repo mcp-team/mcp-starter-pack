@@ -41,6 +41,7 @@ These problems are a great place to build the foundation of your algorithm and d
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/breadth_first_search_shortest_reach/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/breadth_first_search_shortest_reach/sol.py)
 - [Roads and Libraries (HackerRank)](https://www.hackerrank.com/challenges/torque-and-development/problem)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/roads_and_libs/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/roads_and_libs/sol.py)
 ### Medium
 

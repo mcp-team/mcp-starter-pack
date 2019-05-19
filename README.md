@@ -1,9 +1,9 @@
-# mcp-starter-pack
+
+<img  align="center" src="images/mcp_logo.png" width="100" height="100" /> 
 
 
 The MCP starter pack is a repository that contain the solution and link to a variety of programming problems that we enjoyed solving at MCP.
 
-<img src="images/mcp_logo.png" width="200" height="200" />
 
 
 ### Table of Contents
@@ -15,7 +15,7 @@ The MCP starter pack is a repository that contain the solution and link to a var
      - [Hard](#Hard)
 - [FAQ](#FAQ)
 
-# Questions
+## Questions
 
 ### Basic
 
@@ -47,4 +47,4 @@ Challening questions but very rewarding to solve.
 
 - [Kth Ancestor (HR)](https://www.hackerrank.com/challenges/kth-ancestor/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/kth_ancestor/sol.cpp)
-# FAQ
+## FAQ

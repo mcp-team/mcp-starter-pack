@@ -25,8 +25,10 @@ Most of these problems are trivial to solve but you can use them to get familiar
 
 - [Designer PDF Viewer (HackerRank)](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/designer_pdf_viewer/sol.py)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/designer_pdf_viewer/sol.cpp)
 - [Caesar Cipher (HackerRank)](https://www.hackerrank.com/challenges/caesar-cipher-1/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/caesar_cipher/sol.py)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/caesar_cipher/sol.cpp)
 - [Diverse Strings (CodeForces)](https://codeforces.com/contest/1144/problem/A)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/diverse_strings/sol.py)
 

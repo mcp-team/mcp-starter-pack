@@ -27,12 +27,15 @@ Most of these problems are trivial to solve but you can use them to get familiar
 - [Designer PDF Viewer (HackerRank)](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/designer_pdf_viewer/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/designer_pdf_viewer/sol.py)
+    - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/designer_pdf_viewer/sol.java)
 - [Caesar Cipher (HackerRank)](https://www.hackerrank.com/challenges/caesar-cipher-1/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/caesar_cipher/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/caesar_cipher/sol.py)
+    - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/caesar_cipher/sol.java)
 - [Diverse Strings (CodeForces)](https://codeforces.com/contest/1144/problem/A)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/diverse_strings/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/diverse_strings/sol.py)
+    - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/diverse_strings/sol.java)
 
 ### Easy
 

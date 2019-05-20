@@ -15,6 +15,7 @@ The MCP starter pack is a repository built for McMaster students interested in t
 - [Articles](#Articles)
     - [Graphs](#Graphs)
     - [Dynamic Programming](#Dynammic-Programming)
+- [Books](#Books)
 - [FAQ](#FAQ)
 
 ## Questions
@@ -45,6 +46,9 @@ These problems are a great place to build the foundation of your algorithm and d
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/roads_and_libs/sol.py)
 - [Fibonacci Modified (HackerRank)](https://www.hackerrank.com/challenges/fibonacci-modified/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/fibonacci_modified/sol.py)
+- [Connected Cells in a Grid (HackerRank)](https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem)
+    - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/connected_grid/sol.py)
+
 ### Medium
 
 When you've got the fundamentals figured out try these problems.
@@ -53,6 +57,8 @@ When you've got the fundamentals figured out try these problems.
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/edgy_trees/sol.py)
 - [Rust & Murderer (HackerRank)](https://www.hackerrank.com/challenges/rust-murderer/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/rust_murderer/sol.py)
+- [Bear and Steady Gene (HackerRank)](https://www.hackerrank.com/challenges/bear-and-steady-gene/problem)
+    - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/bear_and_steady_gene/sol.py)
 
 ### Hard
 
@@ -73,6 +79,10 @@ Challenging questions but very rewarding to solve.
 - [Largest Sum Contiguous Subarray (geeksforgeeks)](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/) - Super basic DP everyone should know
 - [Coin Change No-Limit (geeksforgeeks)](https://www.geeksforgeeks.org/coin-change-dp-7/) - Given a set of coins, find the number of combinations that add up a given sum.
 - [Longest Common Subsequence (geeksforgeeks)](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) - Find the longest common subsequence between two words.
+
+## Books
+- [Competitive Programming 3 by Felix and Steven Halim](https://github.com/vedic-partap/Codes/blob/master/books/Competitive%20Programming%203.pdf)
+
 ## FAQ
 
 ### Why should I do Competitive Programming?

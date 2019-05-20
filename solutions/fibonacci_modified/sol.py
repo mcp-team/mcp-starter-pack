@@ -1,3 +1,5 @@
+# Written by: le-michael
+
 def dyn_fib(t1, t2, n):
     table = [t1,t2]
     for i in range(1,n-1):

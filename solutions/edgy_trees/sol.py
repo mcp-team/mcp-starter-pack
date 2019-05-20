@@ -1,3 +1,5 @@
+# Written by: le-michael
+
 MOD = 1000000007
 
 def find(x):

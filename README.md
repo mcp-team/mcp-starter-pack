@@ -45,6 +45,8 @@ These problems are a great place to build the foundation of your algorithm and d
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/roads_and_libs/sol.py)
 - [Fibonacci Modified (HackerRank)](https://www.hackerrank.com/challenges/fibonacci-modified/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/fibonacci_modified/sol.py)
+- [Connected Cells in a Grid (HackerRank)](https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem)
+    - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/connected_grid/sol.py)
 
 ### Medium
 
@@ -53,7 +55,7 @@ When you've got the fundamentals figured out try these problems.
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/edgy_trees/sol.py)
 - [Rust & Murderer (HackerRank)](https://www.hackerrank.com/challenges/rust-murderer/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/rust_murderer/sol.py)
-- [Bear and Steady Gene](https://www.hackerrank.com/challenges/bear-and-steady-gene/problem)
+- [Bear and Steady Gene (HackerRank)](https://www.hackerrank.com/challenges/bear-and-steady-gene/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/bear_and_steady_gene/sol.py)
 
 ### Hard

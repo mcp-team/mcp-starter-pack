@@ -1,4 +1,5 @@
 # Written by: le-michael
+
 WIDTH = 20
 HEIGHT = 100001
 lookup = {}

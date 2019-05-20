@@ -52,6 +52,7 @@ These problems are a great place to build the foundation of your algorithm and d
 - [Fibonacci Modified (HackerRank)](https://www.hackerrank.com/challenges/fibonacci-modified/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/fibonacci_modified/sol.py)
 - [Connected Cells in a Grid (HackerRank)](https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/connected_grid/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/connected_grid/sol.py)
 
 ### Medium

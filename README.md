@@ -15,6 +15,7 @@ The MCP starter pack is a repository built for McMaster students interested in t
 - [Articles](#Articles)
     - [Graphs](#Graphs)
     - [Dynamic Programming](#Dynammic-Programming)
+- [Books](#Books)
 - [FAQ](#FAQ)
 
 ## Questions
@@ -77,6 +78,10 @@ Challenging questions but very rewarding to solve.
 - [Largest Sum Contiguous Subarray (geeksforgeeks)](https://www.geeksforgeeks.org/largest-sum-contiguous-subarray/) - Super basic DP everyone should know
 - [Coin Change No-Limit (geeksforgeeks)](https://www.geeksforgeeks.org/coin-change-dp-7/) - Given a set of coins, find the number of combinations that add up a given sum.
 - [Longest Common Subsequence (geeksforgeeks)](https://www.geeksforgeeks.org/longest-common-subsequence-dp-4/) - Find the longest common subsequence between two words.
+
+## Books
+- [Competitive Programming 3 by Felix and Steven Halim](https://github.com/vedic-partap/Codes/blob/master/books/Competitive%20Programming%203.pdf)
+
 ## FAQ
 
 ### Why should I do Competitive Programming?

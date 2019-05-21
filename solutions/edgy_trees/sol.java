@@ -3,10 +3,9 @@ import java.io.*;
 import java.math.*;
 import java.util.*;
 
-public class Edgy_Trees{
+public class Solution{
 
     private static final Scanner scanner = new Scanner(System.in);
-    private static ArrayList<Integer>[] g;
     private static int n, k, u, v, c;
     private static final int MOD = 1000000007;
 
@@ -24,8 +23,6 @@ public class Edgy_Trees{
     public static void main(String[] args) {
         n = scanner.nextInt();
         k = scanner.nextInt();
-        g = new ArrayList[n];
-        for (int i = 0; i < n; i++) g[i] = new ArrayList<>();
         UF uf = new UF(n);
         for (int i = 0; i < n-1; i++) {
             u = scanner.nextInt(); v = scanner.nextInt(); c = scanner.nextInt();

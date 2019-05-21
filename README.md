@@ -51,9 +51,11 @@ These problems are a great place to build the foundation of your algorithm and d
     - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/roads_and_libs/sol.java)
 - [Fibonacci Modified (HackerRank)](https://www.hackerrank.com/challenges/fibonacci-modified/problem)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/fibonacci_modified/sol.py)
+    - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/fibonacci_modified/sol.java)
 - [Connected Cells in a Grid (HackerRank)](https://www.hackerrank.com/challenges/connected-cell-in-a-grid/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/connected_grid/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/connected_grid/sol.py)
+    - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/connected_grid/sol.java)
 
 ### Medium
 

@@ -60,6 +60,9 @@ These problems are a great place to build the foundation of your algorithm and d
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/make_it_connected/sol.cpp)
 - [Heaters (CodeForces)](https://codeforces.com/contest/1066/problem/B)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/heaters/sol.cpp)
+- [Pairs (HackerRank)](https://www.hackerrank.com/challenges/pairs/problem)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/pairs/sol.cpp)
+
 ### Medium
 
 When you've got the fundamentals figured out try these problems.
@@ -104,7 +107,7 @@ Challenging questions but very rewarding to solve.
 
 ## Books
 - [Competitive Programming 3 by Felix and Steven Halim](https://github.com/vedic-partap/Codes/blob/master/books/Competitive%20Programming%203.pdf)
-
+- [Competitive Programmer's Handbook by Antti Laaksonen](https://cses.fi/book/book.pdf)
 ## FAQ
 
 ### Why should I do Competitive Programming?

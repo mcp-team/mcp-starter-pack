@@ -75,7 +75,7 @@ When you've got the fundamentals figured out try these problems.
 Challenging questions but very rewarding to solve. 
 
 - [Kth Ancestor (HackerRank)](https://www.hackerrank.com/challenges/kth-ancestor/problem)
-    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/kth_ancestor/sol.cpp)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/kth_ancestor/sol2.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/kth_ancestor/sol.py)
 
 ## Articles

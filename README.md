@@ -63,6 +63,7 @@ When you've got the fundamentals figured out try these problems.
 - [Edgy Trees (CodeForces)](https://codeforces.com/contest/1139/problem/C)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/edgy_trees/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/edgy_trees/sol.py)
+    - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/edgy_trees/sol.java)
 - [Rust & Murderer (HackerRank)](https://www.hackerrank.com/challenges/rust-murderer/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/rust_murderer/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/rust_murderer/sol.py)

@@ -59,7 +59,7 @@ These problems are a great place to build the foundation of your algorithm and d
 - [Make It Connected (CodeForces)](https://codeforces.com/contest/1095/problem/F)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/make_it_connected/sol.cpp)
 - [Heaters (CodeForces)](https://codeforces.com/contest/1066/problem/B)
-    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solu    tions/heaters/sol.cpp)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/heaters/sol.cpp)
 ### Medium
 
 When you've got the fundamentals figured out try these problems.
@@ -79,7 +79,7 @@ When you've got the fundamentals figured out try these problems.
 - [Graph Without Long Directed Path (CodeForces)](https://codeforces.com/problemset/problem/1144/F)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/graph_without_long_directed_path/sol.cpp)
 - [Graph And Its Complement (CodeForces)](https://codeforces.com/contest/990/problem/D)
-    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solu    tions/graph_and_its_complement/sol.cpp)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/graph_and_its_complement/sol.cpp)
 ### Hard
 
 Challenging questions but very rewarding to solve. 
@@ -88,7 +88,7 @@ Challenging questions but very rewarding to solve.
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/kth_ancestor/sol2.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/kth_ancestor/sol.py)
 - [Coloring Trees (CodeForces)](https://codeforces.com/problemset/problem/711/C)
-    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/s    olutions/coloring_trees/sol.cpp)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/coloring_trees/sol.cpp)
 
 ## Articles
 ### Graphs

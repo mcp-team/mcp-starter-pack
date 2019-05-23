@@ -23,6 +23,7 @@ The MCP starter pack is a repository built for McMaster students interested in t
 ### Warm-ups 
 
 Most of these problems are trivial to solve but you can use them to get familiar with new judging websites. 
+Note: LeetCode provides users with their own I/O operations, so only functions that implement the solutions are provided.
 
 - [Designer PDF Viewer (HackerRank)](https://www.hackerrank.com/challenges/designer-pdf-viewer/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/designer_pdf_viewer/sol.cpp)
@@ -36,6 +37,9 @@ Most of these problems are trivial to solve but you can use them to get familiar
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/diverse_strings/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/diverse_strings/sol.py)
     - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/diverse_strings/sol.java)
+- [Two Sum (LeetCode)](https://leetcode.com/problems/two-sum)
+    - [C++ Solution - Naive O(n^2)](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/two_sum/solA.cpp)
+    - [C++ Solution - Fast O(n)](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/two_sum/solB.cpp)
 
 ### Easy
 
@@ -62,6 +66,10 @@ These problems are a great place to build the foundation of your algorithm and d
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/heaters/sol.cpp)
 - [Pairs (HackerRank)](https://www.hackerrank.com/challenges/pairs/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/pairs/sol.cpp)
+- [A Time-saving Affair (HackerRank)](https://www.hackerrank.com/contests/w38/challenges/a-time-saving-affair)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/a_time_saving_affair/sol.cpp)
+- [Kitchen Utensils (CodeForces)](https://codeforces.com/contest/1032/problem/A)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/kitchen_utensils/sol.cpp)
 
 ### Medium
 
@@ -83,6 +91,9 @@ When you've got the fundamentals figured out try these problems.
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/graph_without_long_directed_path/sol.cpp)
 - [Graph And Its Complement (CodeForces)](https://codeforces.com/contest/990/problem/D)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/graph_and_its_complement/sol.cpp)
+- [Longest Palindromic Substring (LeetCode)](https://leetcode.com/problems/longest-palindromic-substring)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/longest_palindromic_substring/sol.cpp)
+
 ### Hard
 
 Challenging questions but very rewarding to solve. 
@@ -92,6 +103,8 @@ Challenging questions but very rewarding to solve.
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/kth_ancestor/sol.py)
 - [Coloring Trees (CodeForces)](https://codeforces.com/problemset/problem/711/C)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/coloring_trees/sol.cpp)
+- [Landslide (HackerRank)](https://www.hackerrank.com/contests/world-codesprint-13/challenges/landslide)
+    - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/landslide/sol.cpp)
 
 ## Articles
 ### Graphs

@@ -85,6 +85,7 @@ When you've got the fundamentals figured out try these problems.
 - [Bear and Steady Gene (HackerRank)](https://www.hackerrank.com/challenges/bear-and-steady-gene/problem)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/bear_and_steady_gene/sol.cpp)
     - [Python Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/bear_and_steady_gene/sol.py)
+    - [Java Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/bear_and_steady_gene/sol.java)
 - [k-Tree (CodeForces)](https://codeforces.com/problemset/problem/431/C)
     - [C++ Solution](https://github.com/le-michael/mcp-starter-pack/blob/master/solutions/k-tree/sol.cpp)
 - [Graph Without Long Directed Path (CodeForces)](https://codeforces.com/problemset/problem/1144/F)

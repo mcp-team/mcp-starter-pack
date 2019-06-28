@@ -17,7 +17,7 @@ The MCP starter pack is a repository built for McMaster students interested in t
     - [Dynamic Programming](#Dynammic-Programming)
 - [Books](#Books)
 - [FAQ](#FAQ)
-- [More Resources](#More Resources)
+- [More Resources](#MoreResources)
 
 ## Questions
 
@@ -138,4 +138,4 @@ Competitive programming is a great way to practice for technical interviews. The
 Also it's fun! :)
 
 ## More Resources
- - [A programmer contest repository](https://github.com/PradCoder/Programming-Contests)
+ - [A new competitive programmer's repository with problems](https://github.com/PradCoder/Programming-Contests)

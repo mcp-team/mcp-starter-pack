@@ -6,7 +6,7 @@ This guide will walk you through a very simple graph problem. I recommend you tr
 
 ## Problem
 
-Given **N** nodes and **M** edges determine if you can travel from node **S** to node **E**.
+Given **N** nodes connected by **M** edges determine if you can travel from node **S** to node **E**.
 
 
 ### Input
@@ -231,3 +231,66 @@ This is a good data structure to use for unweighted graphs and if we know that t
 
 
 ### Solution 3 (Adjacency Set)
+
+#### Overview
+
+The adjacency set works the same as an adjacency list but better. Thanks to the magic of sets we can only ever have unique values in a set, this allows us to easily process problems that give us duplicate edges. Additionaly, if we want to check if two nodes are connected this can now be done in **O( 1 )** (constant time) versus **O( N )** (linear time) in an adjacency list.
+
+```
+[ set( 1 )       ]   0 is connected to 1
+[ set( 0 2 3 6 ) ]   1 is connected to 0, 2, 3 and 6
+[ set( 1 )       ]   2 is connected to 1
+[ set( 1 4 )     ]   3 is connected to 1 and 4
+[ set( 3 5 )     ]   4 is connected to 3 and 5
+[ set( 4 6 )     ]   5 is connected to 4 and 6
+[ set( 1 5 )     ]   6 is connected to 1 and 5
+```
+
+
+#### Build
+
+#### Build
+
+```python
+# Read the value for N and M
+N, M = map(int, raw_input().split())
+
+# Create an array of size N with N empty sets
+adj_set = [set() for i in range(N)]
+
+# Read the value for S and E
+S, E = map(int, raw_input().split())
+
+# Read M lines and build the graph
+for _ in range(M):
+    # Read in a temp node n0 and node n1
+    n0, n1 = map(int, raw_input().split())
+    
+    # Connect the nodes
+    adj_set[n0].add(n1)
+    adj_set[n1].add(n0)
+
+# Traverse the graph and print out the solution
+print solution(S, E, adj_set)
+```
+
+#### Traverse
+Literally the exact same code as the adjacency list. Reference Adjacency Matrix for a more in depth explanation.
+``` Python
+def solution(S, E, adj_set):
+
+    stack = [S]
+    visited = set()
+
+    while stack:
+        curr_node = stack.pop()
+        visited.add(curr_node)
+        for next_node in adj_set[curr_node]:
+            if next_node not in visited:
+                stack.append(next_node)
+
+    return E in visited    
+```
+#### Random thoughts
+
+Just use this one it's really good. Also you don't have to store the sets in an array if you're using python, you can use a dictonary instead to save space.

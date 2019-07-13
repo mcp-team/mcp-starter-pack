@@ -61,7 +61,7 @@ A basic problem like this can be solved in many different ways, i'm going to sec
 
 #### Overview
 
-The adjacency matrix is an **N x N** matrix that tells you whether two nodes are connected by checking if an index in the matrix has a value greater than **0**. In our case the values will only ever by **1** or **0** since our graph in unweighted.
+The adjacency matrix is an **N x N** matrix that tells you whether two nodes are connected by checking if an index in the matrix has a value greater than **0**. In our case the values will only ever by **1** or **0** since our graph is unweighted.
 
 ```
 Adhacency Matrix for the example above:

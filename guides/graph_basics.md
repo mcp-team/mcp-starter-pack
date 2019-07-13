@@ -97,7 +97,7 @@ for _ in range(M):
     
     # Connect the nodes
     matrix[n0][n1] = 1
-    matrix[n0][n1] = 1
+    matrix[n1][n0] = 1
 
 # Traverse the graph and print out the solution
 print solution(S, E, matrix)

@@ -1,4 +1,4 @@
-# Graph Basics (DFS)
+# Graph Basics (Graph Data Structures and DFS)
 
 This guide will walk you through a very simple graph problem. I recommend you try it out before you look at the solution.
 
@@ -36,7 +36,7 @@ true
 
 ## Problem Break Down
 
-The first thing I like to do when I get a problem is try to understand how the input is given to us. From this we can figure out how we can generate our data structures.
+The first thing I like to do when I get a problem is try to understand how the input is given to me. From this we can figure out how we can generate our data structures.
 
 From the example above we can see that our input will always be **M+2** lines. Where the first line will give us the value **N** and the value **M**, and the second line gives us the value **S** and **E**.
 
@@ -101,6 +101,8 @@ print solution(S, E, matrix)
 
 We will be using DFS (Depth Frist Search) to traverse the graph and to see if starting at node **S** we can reach node **E**. I will do this iteratively to make it eaiser to visualize how the graph gets traversed.
 
+
+
 ``` Python
 def solution(S, E, matrix):
 
@@ -150,6 +152,10 @@ def solution(S, E, matrix):
     return E in visited    
 
 ```
+#### Random thoughts
+
+
+Adjacency Matrix are a great data structure to use for representing weighted graphs. Instead of having 0's and 1's we can replace the 1's with the weigth of traveling from one node to the next. So let's say we have a 5 instead of a 1 at `matrix[0][1]` we now know that it costs 5 to get from 0 to 1. This is more advance so don't worry about it now.
 
 ### Solution 2 (Adjacency List)
 
@@ -195,13 +201,9 @@ print solution(S, E, adj_list)
 ```
 
 #### Traverse
-
+Alot of the algorithm stays the same I will only comment on the new stuff. Reference Adjacency Matrix for a more in depth explanation.
 ``` Python
 def solution(S, E, adj_list):
-
-    # Alot of the algorithm stays the same I will only comment
-    # on the new stuff. Reference Adjacency Matrix for a more
-    # in depth explanation.
 
     stack = [S]
     visited = set()
@@ -222,5 +224,10 @@ def solution(S, E, adj_list):
     return E in visited    
 
 ```
+
+#### Random thoughts
+
+This is a good data structure to use for unweighted graphs and if we know that the problem won't give us more than **N * (N - 1)** edges. It's easily defeated by the next data strucuture however so I wouldn't even touch this one. :woman_shrugging:
+
 
 ### Solution 3 (Adjacency Set)

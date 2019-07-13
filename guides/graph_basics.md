@@ -97,7 +97,7 @@ for _ in range(M):
 # Traverse the graph and print out the solution
 print solution(S, E, matrix)
 ```
-### Traverse
+#### Traverse
 
 We will be using DFS (Depth Frist Search) to traverse the graph and to see if starting at node **S** we can reach node **E**. I will do this iteratively to make it eaiser to visualize how the graph gets traversed.
 
@@ -150,3 +150,77 @@ def solution(S, E, matrix):
     return E in visited    
 
 ```
+
+### Solution 2 (Adjacency List)
+
+
+#### Overview
+
+An adjacency list will use less memory than an adjacency matrix if there
+are less than **N * (N - 1)** edges in the graph, this value is the maximum number of edges in a fully connected graph. 
+```
+[ [ 1 ]       ]   0 is connected to 1
+[ [ 0 2 3 6 ] ]   1 is connected to 0, 2, 3 and 6
+[ [ 1 ]       ]   2 is connected to 1
+[ [ 1 4 ]     ]   3 is connected to 1 and 4
+[ [ 3 5 ]     ]   4 is connected to 3 and 5
+[ [ 4 6 ]     ]   5 is connected to 4 and 6
+[ [ 1 5 ]     ]   6 is connected to 1 and 5
+```
+This data strucutre improves the runtime of our traversing by only storing what node we are connected to. This saves time on determining what node to visit next. The down side to this data structure is if the problem gives duplicate entries than we might append the same node twice.
+
+#### Build
+
+```python
+# Read the value for N and M
+N, M = map(int, raw_input().split())
+
+# Create an array of size N with N empty arrays
+adj_list = [[] for i in range(N)]
+
+# Read the value for S and E
+S, E = map(int, raw_input().split())
+
+# Read M lines and build the graph
+for _ in range(M):
+    # Read in a temp node n0 and node n1
+    n0, n1 = map(int, raw_input().split())
+    
+    # Connect the nodes
+    adj_list[n0].append(n1)
+    adj_list[n1].append(n0)
+
+# Traverse the graph and print out the solution
+print solution(S, E, adj_list)
+```
+
+#### Traverse
+
+``` Python
+def solution(S, E, adj_list):
+
+    # Alot of the algorithm stays the same I will only comment
+    # on the new stuff. Reference Adjacency Matrix for a more
+    # in depth explanation.
+
+    stack = [S]
+    visited = set()
+
+    while stack:
+        curr_node = stack.pop()
+        visited.add(curr_node)
+        
+        # Since we store what nodes we can travel to
+        # we can iterate through the values directly.
+        for next_node in adj_list[curr_node]:
+            # The conditional only checks whether the next node is in
+            # visited now since all values for next node is reachable
+            # from the current node.
+            if next_node not in visited:
+                stack.append(next_node)
+
+    return E in visited    
+
+```
+
+### Solution 3 (Adjacency Set)

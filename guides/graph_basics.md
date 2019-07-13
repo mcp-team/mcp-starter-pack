@@ -1,12 +1,17 @@
 # Graph Basics (Graph Data Structures and DFS)
 
-This guide will walk you through a very simple graph problem. I recommend you try it out before you look at the solution.
+This guide will walk you through a very simple graph problem. All solutions will be written in python. I recommend you try it out before you look at the solution. 
 
-
+- [Problem](#Problem)
+- [Problem Breakdown](#problem-breakdown)
+- [Solution](#Solution)
+    - [Solution 1 Adjacency Matrix](#Solution-1-Adjacency-Matrix)
+    - [Solution 2 Adjacency List](#Solution-2-Adjacency-List)
+    - [Solution 3 Adjacency Set](#Solution-3-Adjacency-Set)
 
 ## Problem
 
-Given **N** nodes connected by **M** edges determine if you can travel from node **S** to node **E**.
+Given **N** nodes connected by **M** bidirectional edges determine if you can travel from node **S** to node **E**.
 
 
 ### Input
@@ -34,7 +39,7 @@ Return a boolean stating whether you can travel from node **S** to node **E**.
 true
 ```
 
-## Problem Break Down
+## Problem Breakdown
 
 The first thing I like to do when I get a problem is try to understand how the input is given to me. From this we can figure out how we can generate our data structures.
 
@@ -42,7 +47,7 @@ From the example above we can see that our input will always be **M+2** lines. W
 
 We see that our graph will have **7** nodes and edges, and our objective is to see if we can travel from node **0** to node **5**.
 
-The remaining lines are used to help us construct our graph. From the input above we will get a graph that will look like the following. 
+The remaining lines are used to help us construct our graph. Keep in mind this graph only has bidirectional edges, this means if you can go from 0 to 1 you can go from 1 to 0. From the input above we will get a graph that will look like the following. 
 
 ![example graph](images/graph_basic_0.png)
 
@@ -50,9 +55,9 @@ When drawn out we can see that it is possible to get from node **0** to node **5
 
 ## Solution
 
-A basic problem like this can be solved in many different ways, i'm going to section off each solution based off different ways to represent a graph. This will help you understand the different approaches people can use to solve graph problems.
+A basic problem like this can be solved in many different ways, i'm going to section off each solution based off different data structures to represent a graph. Each data structure have their pros and cons.
 
-### Solution 1 (Adjacency Matrix)
+### Solution 1 Adjacency Matrix
 
 #### Overview
 
@@ -99,7 +104,7 @@ print solution(S, E, matrix)
 ```
 #### Traverse
 
-We will be using DFS (Depth Frist Search) to traverse the graph and to see if starting at node **S** we can reach node **E**. I will do this iteratively to make it eaiser to visualize how the graph gets traversed.
+We will be using DFS (Depth First Search) to traverse the graph and to see if starting at node **S** we can reach node **E**. I will do this iteratively to make it eaiser to visualize how the graph gets traversed.
 
 
 
@@ -127,7 +132,7 @@ def solution(S, E, matrix):
         # and remove that value from the stack.
         curr_node = stack.pop()
 
-        # Now that we are visiting the node curr we can add it
+        # Now that we are visiting the node curr_node we can add it
         # to our visited set.
         visited.add(curr_node)
 
@@ -157,7 +162,7 @@ def solution(S, E, matrix):
 
 Adjacency Matrix are a great data structure to use for representing weighted graphs. Instead of having 0's and 1's we can replace the 1's with the weigth of traveling from one node to the next. So let's say we have a 5 instead of a 1 at `matrix[0][1]` we now know that it costs 5 to get from 0 to 1. This is more advance so don't worry about it now.
 
-### Solution 2 (Adjacency List)
+### Solution 2 Adjacency List
 
 
 #### Overview
@@ -173,7 +178,7 @@ are less than **N * (N - 1)** edges in the graph, this value is the maximum numb
 [ [ 4 6 ]     ]   5 is connected to 4 and 6
 [ [ 1 5 ]     ]   6 is connected to 1 and 5
 ```
-This data strucutre improves the runtime of our traversing by only storing what node we are connected to. This saves time on determining what node to visit next. The down side to this data structure is if the problem gives duplicate entries than we might append the same node twice.
+This data structure improves the runtime of our traversing by only storing what node we are connected to. This saves time on determining what node to visit next. The down side to this data structure is if the problem gives duplicate entries then we might append the same node twice.
 
 #### Build
 
@@ -227,10 +232,10 @@ def solution(S, E, adj_list):
 
 #### Random thoughts
 
-This is a good data structure to use for unweighted graphs and if we know that the problem won't give us more than **N * (N - 1)** edges. It's easily defeated by the next data strucuture however so I wouldn't even touch this one. :woman_shrugging:
+This is a good data structure to use for unweighted graphs and if we know that the problem won't give us more than **N * (N - 1)** edges. It's easily defeated by the next data strucuture however, so I wouldn't even touch this one :woman_shrugging:. 
 
 
-### Solution 3 (Adjacency Set)
+### Solution 3 Adjacency Set
 
 #### Overview
 
@@ -245,9 +250,6 @@ The adjacency set works the same as an adjacency list but better. Thanks to the 
 [ set( 4 6 )     ]   5 is connected to 4 and 6
 [ set( 1 5 )     ]   6 is connected to 1 and 5
 ```
-
-
-#### Build
 
 #### Build
 

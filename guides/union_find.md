@@ -5,7 +5,7 @@
 - [Trivial Approach](#Trivial-Approach)
 - [Solution](#Solution)
     - [Union Find Overview](#Union-Find-Overview)
-    - [Code and Explanation](#Code-and-Explanation)
+    - [Code](#Code)
     - [Path Compression Optimization](#Path-Compression-Optimization)
     - [Full Solution](#Full-Solution)
 

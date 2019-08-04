@@ -11,7 +11,7 @@
 
 ## Problem
 
-Given **N** nodes connected by **M** bidirectional edges complete **Q** queries determining if you can travel from node **S[i]** to node **E[i]**, where  **0 <= i < Q**.
+Given **N** nodes, and **M** bidirectional edges denoting how nodes are connected, complete **Q** queries determining if you can travel from node **S** to node **E**, where  the values of **S** and **E** change in each query.
 
 
 ### Input
@@ -19,7 +19,7 @@ First line gives you the value **N** nodes, **M** edges and **Q** queries.
 
 The next **M** lines tell you which nodes are connected by a bidirectional edge.
 
-The next **Q** queries will give you a node **S[i]** and node **E[i]**.
+The next **Q** queries will give you a node **S** and node **E**.
 #### Example:
 ```
 11 8 3
@@ -36,7 +36,7 @@ The next **Q** queries will give you a node **S[i]** and node **E[i]**.
 0 7
 ```
 ### Output
-Return **Q** booleans stating whether you can travel from node **S[i]** to node **E[i]**.
+Return **Q** booleans stating whether you can travel from node **S** to node **E**.
 #### Example:
 ```
 false
@@ -52,7 +52,7 @@ The resulting graph will look like the following:
 
 ![example graph](images/union_find_0.png)
 
-The last **Q** lines of inputs give us a value **S[i]** and **E[i]** and our goal is to figure out if we can travel from these points. 
+The last **Q** lines of inputs give us a value **S** and **E** and our goal is to figure out if we can travel from **S** to **E**, where **S** and **E** change in each query .  
 
 We will have to print out **Q** boolean values for this problem. For the example output we see that our first case should return false since you cannot travel to node **0** from node **6**, the second case is possible because you can travel from node **5** to node **10**, and finally we can travel from **0** to **7** so the last case is also possible.
 
@@ -60,7 +60,7 @@ We will have to print out **Q** boolean values for this problem. For the example
 
 ## Trivial Approach 
 
-At an intial glance this problem looks very simliar to a simple DFS problem. Infact it's almost the same problem as the one I wrote about in the graph basic guide ([Graph Basics Guide](https://github.com/le-michael/mcp-starter-pack/blob/master/guides/graph_basics.md)). The only thing that I changed is that we're now doing multiple search queries instead of just one.
+At an intial glance this problem looks very similar to a simple DFS problem. Infact it's almost the same problem as the one I wrote about in the graph basics guide ([Graph Basics Guide](https://github.com/le-michael/mcp-starter-pack/blob/master/guides/graph_basics.md)). The only thing that I changed is that we're now doing multiple search queries instead of just one.
 
 A DFS solution to this problem would look something like this:
 
@@ -101,7 +101,7 @@ Imagine our graph looked like the following:
 
 ![example graph](images/union_find_1.png)
 
-We are given a large chain as our graph. Now imagine if the problem gives you a test case with 1000000 queries where in each query the value of **S[i]** is between 0 and 100 and the value of **E[i]** is between 9999900 and 10000000. The solution above will be too slow to solve this case because for each query we're going to visit every node between **S[i]** and **E[i]**, worst case we will visit 1000000 * 10000001 nodes!
+We are given a large chain as our graph. Now imagine if the problem gives you a test case with 1000000 queries where in each query the value of **S** is between 0 and 100 and the value of **E** is between 9999900 and 10000000. The solution above will be too slow to solve this case because for each query we're going to visit every node between **S** and **E**, worst case we will visit 1000000 * 10000001 nodes!
 
 So yes, this solution is correct but you won't get all the test cases!
 
@@ -115,11 +115,11 @@ Union find also known as the disjoint set data structure changes the way we look
 
 The image above isn't really representive of how a graph looks after completing union find but it helps show how you can view these nodes as belonging to a distinct group.
 
-Since this graph is not directed we know that any two nodes in the same group can travel to each other. So we can rephrase our objective from being can you travel from **S[i]** to **E[i]** to is **S[i]** and **E[i]** in the same group.
+Since this graph is not directed we know that any two nodes in the same group can travel to each other. So we can rephrase our objective from being can you travel from **S** to **E** to is **S** and **E** in the same group.
 
 #### Initial State
 
-Our goal is to build a data structure that can represent this grouping realtion.
+Our goal is to build a data structure that can represent this grouping relation.
 
 Before we can move forward we need to know the inital state of the graph before the input tells us how the nodes are connected. Each node is initially said to belong in it's own group.
 
@@ -139,7 +139,7 @@ The array is named parent because what we will store is the parent group that th
 
 ![example graph](images/union_find_5.png)
 
-The image above is a more appropriate representation of the graph in it's initial state because each node has an edge pointing to itself. 
+The image above is a more appropriate representation of the graph in its' initial state because each node has an edge pointing to itself. 
 
 #### Graphical Example
 
@@ -154,7 +154,9 @@ Before we look at the code let's do a graphical example to get an idea of how th
 ##### Connect 3 to 1:
 At first this case may look confusing. Why did I decide to connect 3 to 7 instead of 3 to 1? 
 
-In union find the general rule is to connect the parent of one group to the parent of the other. This prevents the group from breaking. In this case we could connect 3 to 1 because 3 is a root so it won't really effect the group. But let's say I wanted to connect 0 to 1. If I were to do that 0, 1, 7 will be connected but 3 wouldn't be, now our graph is all wrong. So to prevent this we always connect the parent of a group to the parent of another group.
+In union find the general rule is to connect the parent of one group to the parent of the other. This prevents the group from breaking. In this case we could connect 3 to 1 because 3 is a root so it won't really effect the group. But let's say I wanted to connect 0 to 1. If I were to do that 0, 1, and 7 will be connected but 3 wouldn't be, now our graph is all wrong. So to prevent this we always connect the parent of a group to the parent of another group.
+
+That's a very simple example, but you should play around with more cases and try to figure out when not connecting the parent will break our data structure!
 
 ![example graph](images/union_find_8.png)
 ##### Connect 4 to 3:
@@ -198,7 +200,7 @@ Point 10 to 8.
 
 ![example graph](images/union_find_13.png)
 
-### Code and Explanation
+### Code
 
 The name Union Find comes from the two functions that we use to build this data structure. The find function returns what group a node belongs to and the union function combines two group into one.
 ``` python
@@ -220,8 +222,8 @@ def union(node0, node1):
     # Find the parent of node 1
     parentOfNode1 = find(node1)
 
-    # If both parents are different that means we have
-    # to combine the group. So we point the parent of 
+    # If both parents are different we have
+    # to combine the groups. So we point the parent of 
     # node 0 to the parent of node 1.
     if parentOfNode0 != parentOfNode1:
         parent[parentOfNode0] = parentOfNode1
@@ -243,6 +245,7 @@ def union(node0, node1):
         parent[parentOfNode0] = parentOfNode1
 
 N, M, Q = map(int, raw_input().split())
+parent = [i for i in range(N)]
 
 for _ in range(M):
     node0, node1 = map(int, raw_input().split())
@@ -258,9 +261,9 @@ This solution is close to the final product but we can add one more line of opti
 
 ### Path Compression Optimization
 
-Path compression is a simple optimization technique that only works if we are computing multiple find queries.
+Path compression is a simple optimization technique that only works well if we are computing multiple find queries.
 
-It's goal is to make sure that all nodes will end up pointing to its' parent.
+Its goal is to make sure that all nodes will end up pointing to its' parent.
 
 The only thing we need to change is the find function.
 ``` python
@@ -283,44 +286,42 @@ def find(node):
         # You go up to the root, get the value of the root and 
         # as you go down the chain ever child that called 
         # this function will point itself to the parent.
-        #
-        # Before:
-        # 0 -> 1 -> 2 -> 3
-        # 
-        # find(0)
-        # parent of 0 is 1
-        # call find(1)
-        # parent of 1 is 2
-        # call find(2)
-        # parent of 2 is 3
-        # call find(3)
-        # parent of 3 is 3
-        # return parent of 3
-        # set parent of 2 to 3
-        # return parent of 2
-        # set parent of 1 to 3
-        # return parent of 1
-        # set parnet of 0 to 3
-        # return parent of 0
-        # 3 is returned
-        #
-        # These operation will find 0's parent and also
-        # change the graph to look like this.
-        # After:
-        #  0 -> 3 <- 1
-        #       ^
-        #       |
-        #       2
-        #
-        # Now the next time you call find(0) it will
-        # get it faster and won't have to go through node 1
-        # and node 2.
         parent[node] = find(parent[node])
 
-    # When you are the root just return yourself.
+    # Return your parent
     return parent[node]
 
 ```
+
+Let's do a simple example to show how this works.
+
+![example graph](images/union_find_14.png)
+
+We built our grouping data structure and we get the graph above. When we call find on node 0 `find(0)` without our optimization, what happens is we start at 0 travel to 1, 2, then 3. Once we get to 3 we have to travel back, 3, 2, 1, 0 then the value 3 is returned. Every time we do this we have have to travel that same path even though we've done it before and know the value at the end of `find(0)`
+
+With path compression we restructure the graph every time we do a find call. So for the graph above the following happens:
+```
+1. call `find(0)`
+2. the parent of 0 is 1
+3. call `find(1)`
+4. the parent of 1 is 2
+5. call `find(2)`
+6. the parent of 2 is 3
+7. call `find(3)`
+8. the parent of 3 is 3
+9. return the parent of 3 which is 3
+10. set the parent of 2 to be 3
+11. return the parent of 2 which is 3
+12. set the parent of 1 to be 3
+13. return the parent of 1 which is 3
+14. set the parent of 0 to be 3
+15. return the parent of 0 which is 3
+```
+The resulting graph after running our find function with path compression:
+
+![example graph](images/union_find_15.png)
+
+Now after calling `find(0)` we get a value 3 and also we optimized our data structure so that we don't have to travel the entire path again! We can now just jump straight to the answer on our next queries.
 
 ### Full Solution
 ``` python
@@ -338,6 +339,7 @@ def union(node0, node1):
         parent[parentOfNode0] = parentOfNode1
 
 N, M, Q = map(int, raw_input().split())
+parent = [i for i in range(N)]
 
 for _ in range(M):
     node0, node1 = map(int, raw_input().split())
@@ -353,6 +355,6 @@ Now that we added path compression into our union find we have the optimal solut
 
 ![example graph](images/union_find_1.png)
 
-With path compression we will never have this structure seen above. Notice how the union function uses the find method. As we build this graph we are optimizing the structure, and always pointing every node to a parent node. The result will be a graph where we can query our find function in O(1). 
+With path compression we will never have this structure seen above. Notice how the union function uses the find function. As we build this graph we are optimizing the structure, and always(ish) pointing every node to a parent node. The result will be a graph where we can query our find function in O(1). 
 
 Additonally, with path compression the more we use the find function the more optmized our data structure becomes. This makes union find an amazing algorithm to use in query questions like these.

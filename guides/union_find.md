@@ -60,7 +60,7 @@ We will have to print out **Q** boolean values for this problem. For the example
 
 ## Trivial Approach 
 
-At an intial glance this problem looks very similar to a simple DFS problem. Infact it's almost the same problem as the one I wrote about in the graph basics guide ([Graph Basics Guide](https://github.com/le-michael/mcp-starter-pack/blob/master/guides/graph_basics.md)). The only thing that I changed is that we're now doing multiple search queries instead of just one.
+At an intial glance this problem looks very similar to a simple DFS problem. Infact it's almost the same problem as the one I wrote about in the graph basics guide ([Graph Basics Guide](guides/graph_basics.md)). The only thing that I changed is that we're now doing multiple search queries instead of just one.
 
 A DFS solution to this problem would look something like this:
 

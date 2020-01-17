@@ -116,13 +116,13 @@ def solution(S, E, matrix):
     # stack.
     stack = [S]
 
-    # We need to create a visited set to make sure we don't
+    # We need to create a seen set to make sure we don't
     # visit a node more than once. This prevents our program
     # from running indefinitely. For example we want to prevent
     # our program from starting at node 0 adding node 1 going
     # to 1 then adding node 0 then going back to 0 and adding
-    # node 1 again and so on.
-    visited = set()
+    # node 1 again and so on. The start node is default as seen.
+    seen = set([S])
 
     # We are going to run our algorithm until there are no more
     # nodes in our stack. This means we have visited all the nodes
@@ -131,10 +131,6 @@ def solution(S, E, matrix):
         # We will set the current node to be the top of the stack,
         # and remove that value from the stack.
         curr_node = stack.pop()
-
-        # Now that we are visiting the node curr_node we can add it
-        # to our visited set.
-        visited.add(curr_node)
 
         # We will iterate through the row curr since we are
         # traveling from the node with value curr.
@@ -147,14 +143,18 @@ def solution(S, E, matrix):
             # been to the next node before. If both nodes are connected
             # and we haven't been to the next node then we will add it to
             # the stack.
-            if matrix[curr_node][next_node] > 0 and next_node not in visited:
+            if matrix[curr_node][next_node] > 0 and next_node not in seen:
                 stack.append(next_node)
+                
+                # We add the next node to seen to prevent it from being added again
+                # to the stack.
+                seen.add(next_node)
 
         # Eventually we will visit all the nodes we can and the stack will be
         # empty.
 
-    # If E is in visited then we can travel from S to E.
-    return E in visited    
+    # If E is in seen then we can travel from S to E.
+    return E in seen    
 
 ```
 #### Random thoughts
@@ -211,22 +211,22 @@ Alot of the algorithm stays the same I will only comment on the new stuff. Refer
 def solution(S, E, adj_list):
 
     stack = [S]
-    visited = set()
+    seen = set([S])
 
     while stack:
         curr_node = stack.pop()
-        visited.add(curr_node)
-        
+ 
         # Since we store what nodes we can travel to
         # we can iterate through the values directly.
         for next_node in adj_list[curr_node]:
             # The conditional only checks whether the next node is in
-            # visited now since all values for next node is reachable
+            # seen now since all values for next node is reachable
             # from the current node.
-            if next_node not in visited:
+            if next_node not in seen:
                 stack.append(next_node)
+                seen.add(next_node)
 
-    return E in visited    
+    return E in seen    
 
 ```
 
@@ -282,16 +282,16 @@ Literally the exact same code as the adjacency list. Reference Adjacency Matrix 
 def solution(S, E, adj_set):
 
     stack = [S]
-    visited = set()
+    seen = set()
 
     while stack:
         curr_node = stack.pop()
-        visited.add(curr_node)
         for next_node in adj_set[curr_node]:
-            if next_node not in visited:
+            if next_node not in seen:
                 stack.append(next_node)
+                seen.add(next_node)
 
-    return E in visited    
+    return E in seen    
 ```
 #### Random thoughts
 
